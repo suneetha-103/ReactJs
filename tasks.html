@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>resume</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<style>
+		header{
+			background:skyblue;
+			color: #fff;
+			padding:1%;
+		}
+		.parent{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+		}
+		.child-1{
+			width: 30%;
+			border:1px solid #00000;
+			box-shadow: 0px 8px 8px -8px #000;
+			padding: 1%;
+			margin: 1%
+		}
+		.child-2{
+			width: 30%;
+			border:1px solid #ddd;
+			box-shadow: 0px 8px 8px -8px #000;
+			padding: 1%;
+			margin: 1%;
+			background:lightpink;
+}
+.child-1 img{
+	width:50%;
+	text-align: center;
+	display: block;
+	margin:0% auto; 
+
+
+}
+.child-1 h2{
+	margin:0% auto;
+	text-align: center;
+
+}
+@media only screen and (min-width: 320px)and (max-width: 480px){
+	.child-1,
+	.child2{
+		width:45%;
+		font-size: 25px;
+	}
+}
+	@media only screen and (min-width: 481px)and (max-width: 762px){
+	.child-1,
+	.child2{
+		width:90%;
+		font-size: 25px;
+		background:blue;
+		}
+	}
+	</style>
+
+</head>
+
+<body>
+	<header>Profile Information</header>
+	<main class="parent"><!--content-->
+		<article class="child-1">
+			<img src="profile.svg" alt="user">
+			<h2>Suneetha</h2>
+			<a href="mailto:nagasunitha301@gmail.com">nagasunitha301@gmail.com</a>
+		</article><!--child-->
+
+		<article class="child-2">
+			<h2>summery</h2>
+			<li>knowledge on c</li>
+			<li>knowledge on python</li>
+			<li>knowledge on java</li>
+		</article>
+	</main>
+
+
+</body>
+</html>
